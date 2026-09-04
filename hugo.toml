@@ -1,0 +1,81 @@
+# ===== 基础信息 =====
+# TODO: 部署时把 baseURL 改成你的域名或 GitHub Pages 地址，例如 https://yourname.github.io/
+baseURL = 'https://example.org/'
+locale = 'zh-cn'
+defaultContentLanguage = 'zh'
+hasCJKLanguage = true          # 中文内容：正确统计字数/阅读时长
+# TODO: 改成你的博客名
+title = '我的技术博客'
+theme = 'PaperMod'
+
+# 让文章以 posts 为默认内容目录
+[permalinks]
+  posts = '/posts/:filename/'
+
+[taxonomies]
+  category = 'categories'
+  tag = 'tags'
+
+# ===== 站点参数 =====
+[params]
+  env = 'production'
+  # TODO: 改成你的博客名和一句话简介
+  title = '我的技术博客'
+  description = '嵌入式软件工程师的技术笔记：单片机 / Linux / C++ / 机器人'
+  # TODO: 改成你的名字
+  author = '你的名字'
+
+  defaultTheme = 'auto'        # 跟随系统亮/暗色
+  disableThemeToggle = false
+
+  # 文章页显示的组件
+  ShowReadingTime = true
+  ShowWordCount = true
+  ShowBreadCrumbs = true
+  ShowPostNavLinks = true      # 上一篇/下一篇
+  ShowCodeCopyButtons = true   # 代码块复制按钮
+  ShowToc = true               # 文章目录
+  TocOpen = false
+  ShowShareButtons = false
+  ShowRssButtonInSectionTermList = true
+
+  # 首页欢迎语
+  [params.homeInfoParams]
+    Title = '你好 👋'
+    Content = '嵌入式软件工程师 · 记录单片机、Linux、C++、机器人开发笔记'
+
+  # TODO: 社交链接（可选，需要时取消注释并填你的地址）
+  # [params.socialIcons]
+  #   github = 'https://github.com/你的用户名'
+
+# 搜索功能所需（PaperMod 搜索）
+[outputs]
+  home = ['HTML', 'RSS', 'JSON']
+
+# ===== 顶部导航菜单 =====
+[menu]
+  [[menu.main]]
+    identifier = 'posts'
+    name = '文章'
+    url = '/posts/'
+    weight = 10
+  [[menu.main]]
+    identifier = 'archives'
+    name = '归档'
+    url = '/archives/'
+    weight = 20
+  [[menu.main]]
+    identifier = 'tags'
+    name = '标签'
+    url = '/tags/'
+    weight = 30
+  [[menu.main]]
+    identifier = 'categories'
+    name = '分类'
+    url = '/categories/'
+    weight = 40
+  [[menu.main]]
+    identifier = 'search'
+    name = '搜索'
+    url = '/search/'
+    weight = 50
