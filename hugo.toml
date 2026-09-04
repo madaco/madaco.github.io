@@ -1,6 +1,5 @@
 # ===== 基础信息 =====
-# TODO: 部署时把 baseURL 改成你的域名或 GitHub Pages 地址，例如 https://yourname.github.io/
-baseURL = 'https://example.org/'
+baseURL = 'https://madaco.github.io/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
 hasCJKLanguage = true          # 中文内容：正确统计字数/阅读时长
